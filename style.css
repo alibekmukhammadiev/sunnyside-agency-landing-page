@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fraunces", serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+main {
+  background-image: url(images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+}
+
+.main__div h1 {
+  font-size: 64px;
+  letter-spacing: 12px;
+  font-weight: 900;
+}
+
+.div__controller {
+  padding: 0 160px 0 160px;
+}
+
+.row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.graphic {
+  color: hsl(167, 40%, 24%);
+}
+
+.photography {
+  color: hsl(198, 62%, 26%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 120px 0;
+}
+
+.testimonials div div p {
+  color: hsl(213, 9%, 39%);
+}
+
+.testimonials div div span {
+  letter-spacing: -0.5px;
+  color: hsl(210, 4%, 67%);
+}
+
+.highlighted__div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.highlighted__href {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.highlighted__href::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  width: 110%;
+  border-radius: 2px;
+
+  opacity: 0.35;
+  z-index: -1;
+}
+
+.highlighted__href--1::after {
+  border: 5px solid hsl(51, 100%, 49%);
+}
+.highlighted__href--2::after {
+  border: 5px solid hsl(7, 99%, 70%);
+}
+
+footer {
+  background-color: hsl(167, 30%, 63%);
+  padding: 80px 0;
+}
+
+@media only screen and (max-width: 1175px) {
+  .div__controller {
+    padding: 0 100px 0 100px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .div__controller {
+    padding: 60px;
+    text-align: center;
+  }
+
+  .navbar__controller {
+    padding: 2rem 0;
+    gap: 2rem !important;
+    background-color: white;
+    text-align: center;
+  }
+
+  .navbar__controller a {
+    color: black !important;
+  }
+
+  .navbar__controller a:last-child {
+    color: white !important;
+    background-color: hsl(51, 100%, 49%) !important;
+    padding: 5px 0;
+    margin: 0 auto;
+  }
+  .highlighted__div {
+    justify-content: center;
+  }
+
+  .main__div h1 {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .control-hamburger {
+    display: flex !important;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .testimonials {
+    gap: 30px;
+    padding: 60px 0;
+  }
+  .div__photography {
+    height: 550px;
+  }
+
+  .div__graphic {
+    height: 550px;
+  }
+
+  footer {
+    padding: 40px 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .main__div h1 {
+    font-size: 28px;
+    max-width: 100%;
+  }
+}
